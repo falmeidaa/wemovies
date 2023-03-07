@@ -13,7 +13,7 @@ import {
   StyledTitleTypography,
   SubtotalContainer,
   TrashContainer
-} from './product-cart-styles'
+} from './desktop-product-cart-styles'
 
 type Props = {
   movie: MovieModel
@@ -21,7 +21,7 @@ type Props = {
   subTotal: number
 }
 
-export const ProductCart = ({ movie, quantity, subTotal }: Props) => {
+export const DesktopProductCart = ({ movie, quantity, subTotal }: Props) => {
   const { addMovieToCart, decreaseMovieFromCart, removeMovieFromCart } =
     useCartHandler()
   const { formatBRLCurrency } = useFormat()

@@ -1,16 +1,20 @@
 import { Button } from '@/app/shared/components'
 import { styled, Typography } from '@mui/material'
 
-export const Container = styled('div')(() => ({
-  background: '#FFFFFF',
-  display: 'grid',
-  rowGap: '1.3125rem',
-  columnGap: '3.25rem',
-  gridTemplateColumns: '3fr repeat(3, 1fr)',
-  padding: '1.5rem',
-  borderRadius: '0.25rem'
-}))
+export const DesktopContainer = styled('div')(({ theme }) => ({
+  display: 'none',
 
+  [theme.breakpoints.up('md')]: {
+    display: 'grid',
+    background: '#FFFFFF',
+    rowGap: '1.3125rem',
+    columnGap: '3.25rem',
+    gridTemplateColumns: '3fr repeat(3, 1fr)',
+    padding: '1.5rem',
+    borderRadius: '0.25rem',
+    overflow: 'auto'
+  }
+}))
 type StyledTypographyProps = {
   isSubTotal?: boolean
 }

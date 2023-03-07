@@ -1,2 +1,6 @@
 export * from './empty-cart/empty-cart'
-export * from './product-cart/product-cart'
+export * from './desktop-product-cart/desktop-product-cart'
+export * from './desktop-view/desktop-view'
+export * from './mobile-view/mobile-view'
+export * from './mobile-product-cart/mobile-product-cart'
+export * from './mobile-view/mobile-view'

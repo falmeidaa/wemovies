@@ -1,18 +1,23 @@
 import { Button } from '@/app/shared/components'
 import { styled, Typography } from '@mui/material'
 
-export const Container = styled('div')(() => ({
+export const Container = styled('div')(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
   padding: '4rem',
   gap: '2rem',
   background: '#FFFFFF',
-  borderRadius: '0.25rem'
+  borderRadius: '0.25rem',
+  margin: '0 0.125rem',
+
+  [theme.breakpoints.up('md')]: {
+    margin: 0
+  }
 }))
 
 export const StyledTypography = styled(Typography)(({ theme }) => ({
-  fontweight: 700,
+  fontWeight: 700,
   fontSize: '1.25rem',
   lineHeight: '135%',
   color: theme.palette.customColor.background

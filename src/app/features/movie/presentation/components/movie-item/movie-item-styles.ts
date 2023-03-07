@@ -7,14 +7,16 @@ export const Container = styled('div')(({ theme }) => ({
   alignItems: 'center',
   padding: '10px 11px',
   gap: '0.5rem',
-  width: '309.33px',
-  height: '305px',
   background: '#FFFFFF',
   borderRadius: '4px',
 
   img: {
     height: '11.75rem',
     width: 'auto'
+  },
+
+  [theme.breakpoints.up('md')]: {
+    height: '19rem'
   }
 }))
 

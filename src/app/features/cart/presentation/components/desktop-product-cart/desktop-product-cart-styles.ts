@@ -10,6 +10,12 @@ export const ProductInfoContainer = styled('div')(() => ({
     flexDirection: 'column',
     width: '100%',
     marginLeft: '3.25rem'
+  },
+
+  img: {
+    width: '9.25rem',
+    height: '11.75rem',
+    objectFit: 'cover'
   }
 }))
 

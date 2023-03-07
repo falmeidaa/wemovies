@@ -26,10 +26,15 @@ export const CartContainer = styled('div')(() => ({
   }
 }))
 
-export const CartTitleTypography = styled(Typography)(() => ({
+export const CartTitleTypography = styled(Typography)(({ theme }) => ({
+  display: 'none',
   fontWeight: 600,
   fontSize: '0.875rem',
-  lineHeight: '135%'
+  lineHeight: '135%',
+
+  [theme.breakpoints.up('md')]: {
+    display: 'flex'
+  }
 }))
 
 export const CartQuantityTypography = styled(Typography)(({ theme }) => ({
