@@ -10,11 +10,14 @@ declare module '@mui/material/styles' {
 
 declare module '@mui/material/styles/createPalette' {
   interface CustomColorOptions {
-    background: string
-    primary: string
-    textColor: string
-    secondaryTextColor: string
-    success: string
+    white: string
+    green: string
+    darkGray: string
+    gray: string
+    mediumGray: string
+    lightGray: string
+    blue: string
+    lightBlue: string
   }
 
   interface Palette {

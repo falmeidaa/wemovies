@@ -53,8 +53,8 @@ export const QuantityContainer = styled('div')(({ theme }) => ({
     lineHeight: '136%',
     padding: '0.25rem 1rem',
     textAlign: 'center',
-    color: theme.palette.customColor.background,
-    border: '1px solid #D9D9D9',
+    color: theme.palette.customColor.gray,
+    border: `1px solid ${theme.palette.customColor.lightGray}`,
     borderRadius: '0.25rem',
     minWidth: '3.75rem'
   }
@@ -66,7 +66,7 @@ export const StyledSubtotalTypography = styled(Typography)(({ theme }) => ({
   fontWeight: 700,
   fontSize: '0.75rem',
   lineHeight: '133%',
-  color: theme.palette.customColor.secondaryTextColor,
+  color: theme.palette.customColor.mediumGray,
   textTransform: 'uppercase'
 }))
 
@@ -74,7 +74,7 @@ export const StyledTitleTypography = styled(Typography)(({ theme }) => ({
   fontWeight: 700,
   fontSize: '0.875rem',
   lineHeight: '136%',
-  color: theme.palette.customColor.background,
+  color: theme.palette.customColor.gray,
   minWidth: '7.5rem'
 }))
 
@@ -82,6 +82,6 @@ export const StyledPriceTypography = styled(Typography)(({ theme }) => ({
   fontWeight: 700,
   fontSize: '1rem',
   lineHeight: '137.5%',
-  color: theme.palette.customColor.background,
+  color: theme.palette.customColor.gray,
   minWidth: '4.125rem'
 }))

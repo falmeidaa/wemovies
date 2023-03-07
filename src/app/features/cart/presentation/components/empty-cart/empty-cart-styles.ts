@@ -7,7 +7,7 @@ export const Container = styled('div')(({ theme }) => ({
   alignItems: 'center',
   padding: '4rem',
   gap: '2rem',
-  background: '#FFFFFF',
+  background: theme.palette.customColor.white,
   borderRadius: '0.25rem',
   margin: '0 0.125rem',
 
@@ -20,17 +20,17 @@ export const StyledTypography = styled(Typography)(({ theme }) => ({
   fontWeight: 700,
   fontSize: '1.25rem',
   lineHeight: '135%',
-  color: theme.palette.customColor.background
+  color: theme.palette.customColor.gray
 }))
 
 export const StyledButton = styled(Button)(({ theme }) => ({
-  background: theme.palette.customColor.primary,
-  color: '#FFFFFF',
+  background: theme.palette.customColor.blue,
+  color: theme.palette.customColor.white,
   width: '11.75rem',
   height: '2.5rem',
 
   '&:hover': {
-    background: theme.palette.customColor.primary,
+    background: theme.palette.customColor.blue,
     opacity: 0.6
   }
 }))

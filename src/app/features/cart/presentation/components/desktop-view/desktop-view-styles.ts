@@ -6,7 +6,7 @@ export const DesktopContainer = styled('div')(({ theme }) => ({
 
   [theme.breakpoints.up('md')]: {
     display: 'grid',
-    background: '#FFFFFF',
+    background: theme.palette.customColor.white,
     rowGap: '1.3125rem',
     columnGap: '3.25rem',
     gridTemplateColumns: '3fr repeat(3, 1fr)',
@@ -25,7 +25,7 @@ export const StyledTypography = styled(Typography, {
   fontWeight: 700,
   fontSize: '0.875rem',
   lineHeight: '136%',
-  color: theme.palette.customColor.secondaryTextColor,
+  color: theme.palette.customColor.mediumGray,
   textTransform: 'uppercase',
 
   ...(isSubTotal && {
@@ -33,10 +33,10 @@ export const StyledTypography = styled(Typography, {
   })
 }))
 
-export const OrderSummaryContainer = styled('div')(() => ({
+export const OrderSummaryContainer = styled('div')(({ theme }) => ({
   display: 'flex',
   justifyContent: 'space-between',
-  borderTop: '1px solid #999999',
+  borderTop: `1px solid ${theme.palette.customColor.mediumGray}`,
   gridColumn: '1/5',
   paddingTop: '1.3125rem',
 
@@ -49,12 +49,12 @@ export const OrderSummaryContainer = styled('div')(() => ({
 }))
 
 export const StyledButton = styled(Button)(({ theme }) => ({
-  background: theme.palette.customColor.primary,
+  background: theme.palette.customColor.blue,
   padding: '0.75rem 2rem',
-  color: '#FFFFFF',
+  color: theme.palette.customColor.white,
 
   '&:hover': {
-    background: theme.palette.customColor.primary,
+    background: theme.palette.customColor.blue,
     opacity: 0.6
   }
 }))
@@ -63,7 +63,7 @@ export const TotalTypography = styled(Typography)(({ theme }) => ({
   fontWeight: 700,
   fontSize: '0.875rem',
   lineHeight: '136%',
-  color: theme.palette.customColor.secondaryTextColor,
+  color: theme.palette.customColor.mediumGray,
   textTransform: 'uppercase'
 }))
 
@@ -71,7 +71,7 @@ export const TotalPriceTypography = styled(Typography)(({ theme }) => ({
   fontWeight: 700,
   fontSize: '1.5rem',
   lineHeight: '137.5%',
-  color: theme.palette.customColor.background,
+  color: theme.palette.customColor.gray,
   flex: 1,
   textAlign: 'center'
 }))

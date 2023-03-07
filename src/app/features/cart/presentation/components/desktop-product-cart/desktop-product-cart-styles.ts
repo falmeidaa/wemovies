@@ -23,14 +23,14 @@ export const StyledTitleTypography = styled(Typography)(({ theme }) => ({
   fontWeight: 700,
   fontSize: '0.875rem',
   lineHeight: '136%',
-  color: theme.palette.customColor.background
+  color: theme.palette.customColor.gray
 }))
 
 export const StyledPriceTypography = styled(Typography)(({ theme }) => ({
   fontWeight: 700,
   fontSize: '1rem',
   lineHeight: '137.5%',
-  color: theme.palette.customColor.background
+  color: theme.palette.customColor.gray
 }))
 
 export const QuantityContainer = styled('div')(({ theme }) => ({
@@ -49,8 +49,8 @@ export const QuantityContainer = styled('div')(({ theme }) => ({
     lineHeight: '136%',
     padding: '0.25rem 1rem',
     textAlign: 'center',
-    color: theme.palette.customColor.background,
-    border: '1px solid #D9D9D9',
+    color: theme.palette.customColor.gray,
+    border: `1px solid ${theme.palette.customColor.lightGray}`,
     borderRadius: '0.25rem'
   }
 }))
@@ -65,7 +65,7 @@ export const StyledSubtotalTypography = styled(Typography)(({ theme }) => ({
   fontWeight: 700,
   fontSize: '0.875rem',
   lineHeight: '136%',
-  color: theme.palette.customColor.background
+  color: theme.palette.customColor.gray
 }))
 
 export const TrashContainer = styled('div')(() => ({

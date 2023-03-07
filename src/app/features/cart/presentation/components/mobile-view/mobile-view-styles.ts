@@ -6,7 +6,7 @@ export const Container = styled('div')(({ theme }) => ({
   flexDirection: 'column',
   justifyContent: 'space-between',
   height: '100%',
-  background: '#FFFFFF',
+  background: theme.palette.customColor.white,
   borderRadius: '0.25rem',
   gap: '1.325rem',
   padding: '1rem',
@@ -23,11 +23,11 @@ export const Container = styled('div')(({ theme }) => ({
   }
 }))
 
-export const OrderSummaryContainer = styled('div')(() => ({
+export const OrderSummaryContainer = styled('div')(({ theme }) => ({
   display: 'flex',
   width: '100%',
   paddingTop: '1.3125rem',
-  borderTop: '1px solid #999999',
+  borderTop: `1px solid ${theme.palette.customColor.mediumGray}`,
 
   '& > div': {
     display: 'flex',
@@ -37,13 +37,13 @@ export const OrderSummaryContainer = styled('div')(() => ({
 }))
 
 export const StyledButton = styled(Button)(({ theme }) => ({
-  background: theme.palette.customColor.primary,
+  background: theme.palette.customColor.blue,
   width: '100%',
   height: '2.5rem',
-  color: '#FFFFFF',
+  color: theme.palette.customColor.white,
 
   '&:hover': {
-    background: theme.palette.customColor.primary,
+    background: theme.palette.customColor.blue,
     opacity: 0.6
   }
 }))
@@ -52,7 +52,7 @@ export const TotalTypography = styled(Typography)(({ theme }) => ({
   fontWeight: 700,
   fontSize: '0.875rem',
   lineHeight: '136%',
-  color: theme.palette.customColor.secondaryTextColor,
+  color: theme.palette.customColor.mediumGray,
   textTransform: 'uppercase'
 }))
 
@@ -60,7 +60,7 @@ export const TotalPriceTypography = styled(Typography)(({ theme }) => ({
   fontWeight: 700,
   fontSize: '1.5rem',
   lineHeight: '137.5%',
-  color: theme.palette.customColor.background,
+  color: theme.palette.customColor.gray,
   textAlign: 'center',
   minWidth: '8.25rem'
 }))

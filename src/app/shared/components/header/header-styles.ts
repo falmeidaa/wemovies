@@ -41,5 +41,5 @@ export const CartQuantityTypography = styled(Typography)(({ theme }) => ({
   fontWeight: 600,
   fontSize: '0.75rem',
   lineHeight: '133%',
-  color: theme.palette.customColor.secondaryTextColor
+  color: theme.palette.customColor.mediumGray
 }))
