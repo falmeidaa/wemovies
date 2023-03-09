@@ -5,6 +5,7 @@ import EnvironmentPlugin from 'vite-plugin-environment'
 
 
 export default defineConfig({
+  base: '/wemovies/',
   plugins: [react(),
     EnvironmentPlugin(['API_URL'])
   ],
